@@ -8,24 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F4E299221F2DFDF800B86D31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E299211F2DFDF800B86D31 /* main.m */; };
-		F4E299251F2DFDF800B86D31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E299241F2DFDF800B86D31 /* AppDelegate.m */; };
-		F4E299281F2DFDF800B86D31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E299271F2DFDF800B86D31 /* ViewController.m */; };
 		F4E2992B1F2DFDF800B86D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E299291F2DFDF800B86D31 /* Main.storyboard */; };
 		F4E2992D1F2DFDF800B86D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */; };
 		F4E299301F2DFDF800B86D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E2992E1F2DFDF800B86D31 /* LaunchScreen.storyboard */; };
+		F4E2993F1F2E01ED00B86D31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2993E1F2E01ED00B86D31 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4E2991D1F2DFDF800B86D31 /* HMWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E299211F2DFDF800B86D31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F4E299231F2DFDF800B86D31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F4E299241F2DFDF800B86D31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4E299261F2DFDF800B86D31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4E299271F2DFDF800B86D31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4E2992A1F2DFDF800B86D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E2992F1F2DFDF800B86D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E299311F2DFDF800B86D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E2993D1F2E01ED00B86D31 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4E2993E1F2E01ED00B86D31 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +55,10 @@
 		F4E2991F1F2DFDF800B86D31 /* HMWaiMai */ = {
 			isa = PBXGroup;
 			children = (
-				F4E299231F2DFDF800B86D31 /* AppDelegate.h */,
-				F4E299241F2DFDF800B86D31 /* AppDelegate.m */,
-				F4E299261F2DFDF800B86D31 /* ViewController.h */,
-				F4E299271F2DFDF800B86D31 /* ViewController.m */,
-				F4E299291F2DFDF800B86D31 /* Main.storyboard */,
-				F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */,
-				F4E2992E1F2DFDF800B86D31 /* LaunchScreen.storyboard */,
-				F4E299311F2DFDF800B86D31 /* Info.plist */,
+				F4E299371F2E01ED00B86D31 /* Classes */,
+				F4E2993A1F2E01ED00B86D31 /* Common(分类) */,
+				F4E2993B1F2E01ED00B86D31 /* Libs(第三方框架) */,
+				F4E2993C1F2E01ED00B86D31 /* Other */,
 				F4E299201F2DFDF800B86D31 /* Supporting Files */,
 			);
 			path = HMWaiMai;
@@ -74,9 +67,59 @@
 		F4E299201F2DFDF800B86D31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F4E299291F2DFDF800B86D31 /* Main.storyboard */,
+				F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */,
+				F4E2992E1F2DFDF800B86D31 /* LaunchScreen.storyboard */,
+				F4E299311F2DFDF800B86D31 /* Info.plist */,
 				F4E299211F2DFDF800B86D31 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4E299371F2E01ED00B86D31 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4E299381F2E01ED00B86D31 /* FoodDeatil(食物详情) */,
+				F4E299391F2E01ED00B86D31 /* Shop(点餐) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F4E299381F2E01ED00B86D31 /* FoodDeatil(食物详情) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "FoodDeatil(食物详情)";
+			sourceTree = "<group>";
+		};
+		F4E299391F2E01ED00B86D31 /* Shop(点餐) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Shop(点餐)";
+			sourceTree = "<group>";
+		};
+		F4E2993A1F2E01ED00B86D31 /* Common(分类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Common(分类)";
+			sourceTree = "<group>";
+		};
+		F4E2993B1F2E01ED00B86D31 /* Libs(第三方框架) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Libs(第三方框架)";
+			sourceTree = "<group>";
+		};
+		F4E2993C1F2E01ED00B86D31 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2993D1F2E01ED00B86D31 /* AppDelegate.h */,
+				F4E2993E1F2E01ED00B86D31 /* AppDelegate.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E299281F2DFDF800B86D31 /* ViewController.m in Sources */,
-				F4E299251F2DFDF800B86D31 /* AppDelegate.m in Sources */,
+				F4E2993F1F2E01ED00B86D31 /* AppDelegate.m in Sources */,
 				F4E299221F2DFDF800B86D31 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +351,7 @@
 				F4E299361F2DFDF800B86D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
