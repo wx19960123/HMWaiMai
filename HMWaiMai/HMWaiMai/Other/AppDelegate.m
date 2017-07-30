@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HMShopController.h"
+#import "HMNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _window = [[UIWindow alloc] init];
+
+    HMShopController *shopVC = [[HMShopController alloc] init];
+    
+    HMNavigationController *nav = [[HMNavigationController alloc] initWithRootViewController:shopVC];
+    // 给窗口指定根控制器
+    _window.rootViewController = nav;
+    
+
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
