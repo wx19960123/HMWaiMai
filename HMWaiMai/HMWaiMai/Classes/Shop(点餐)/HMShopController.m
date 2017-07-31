@@ -47,13 +47,13 @@
      [super viewDidLoad];
     
 //    self.navBar.backgroundColor = [UIColor whiteColor];
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor blueColor];//背景颜色
 
-    self.navItem.title = @"点餐";
+    self.navItem.title = @"点餐";//标题
 
     self.navBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithWhite:0.4 alpha:0]};
     
-    self.navBar.bgImageView.alpha = 0;
+    self.navBar.bgImageView.alpha = 0;//透明度
     
     _rightButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_share"] style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navItem.rightBarButtonItem = _rightButtonItem;
@@ -61,18 +61,18 @@
 }
 
 
-- (void)setupUI {
+- (void)setupUI {//创建头部视图
     UIView *headerView = [[UIView alloc] init];
     headerView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview: headerView];
     
-    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {//添加约束
         make.top.left.right.offset(0);
         make.height.offset(KShopHeaderViewMaxHeight);
     }];
     
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];//添加手势
     [self.view addGestureRecognizer:pan];
     
     _headerView = headerView;
@@ -143,6 +143,13 @@
     CGFloat b = result1 - (a * consult1);
     return a * consult + b;
 
+}
+
+
+
+- (void)setShopTagView{
+    UIView *shopTagView = [[UIView alloc] init];
+    shopTagView.backgroundColor = [UIColor redColor];
 }
 
 @end
