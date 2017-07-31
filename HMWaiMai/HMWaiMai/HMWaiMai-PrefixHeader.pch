@@ -5,6 +5,7 @@
 
 #import "Masonry.h"
 
+#import "UIImageView+WebCache.h"
 
 
 #endif /* HMWaiMai_PrefixHeader_pch */

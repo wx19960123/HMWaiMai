@@ -7,6 +7,7 @@
 //
 
 #import "HMNavigationController.h"
+#import "HMBaseController.h"
 
 @interface HMNavigationController ()
 
@@ -26,14 +27,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)pushViewController:(HMBaseController *)viewController animated:(BOOL)animated{
+    [super pushViewController:viewController animated:animated];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (self.childViewControllers.count > 1) {
+        viewController.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_backItem"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    }
 }
-*/
 
+- (void)back{
+    [self popViewControllerAnimated:YES];
+}
+
+- (UIViewController *)childViewControllerForStatusBarStyle {// 实现此方法让子控制器去设置状态栏的样式
+
+    return self.topViewController;
+}
 @end

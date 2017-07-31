@@ -18,7 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    
+//    self.navBar.backgroundColor = [UIColor whiteColor];
 
+    self.navItem.title = @"食物详情";
 }
 
 - (void)didReceiveMemoryWarning {
