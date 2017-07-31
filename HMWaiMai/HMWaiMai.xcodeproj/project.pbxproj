@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F46C29AA1F2F519F00DFAE44 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */; };
 		F4E299221F2DFDF800B86D31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E299211F2DFDF800B86D31 /* main.m */; };
 		F4E2992B1F2DFDF800B86D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E299291F2DFDF800B86D31 /* Main.storyboard */; };
 		F4E2992D1F2DFDF800B86D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */; };
@@ -55,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F46C29A81F2F519F00DFAE44 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 		F4E2991D1F2DFDF800B86D31 /* HMWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E299211F2DFDF800B86D31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4E2992A1F2DFDF800B86D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		F4E2993A1F2E01ED00B86D31 /* Common(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				F46C29A81F2F519F00DFAE44 /* UIColor+Addition.h */,
+				F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */,
 			);
 			path = "Common(分类)";
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				F4E299BD1F2F075900B86D31 /* UIButton+WebCache.m in Sources */,
 				F4E299BC1F2F075900B86D31 /* SDWebImagePrefetcher.m in Sources */,
 				F4E299C41F2F075900B86D31 /* UIView+WebCacheOperation.m in Sources */,
+				F46C29AA1F2F519F00DFAE44 /* UIColor+Addition.m in Sources */,
 				F4E2997B1F2E07F900B86D31 /* HMShopController.m in Sources */,
 				F4E299761F2E024700B86D31 /* View+MASAdditions.m in Sources */,
 				F4E299711F2E024700B86D31 /* MASLayoutConstraint.m in Sources */,

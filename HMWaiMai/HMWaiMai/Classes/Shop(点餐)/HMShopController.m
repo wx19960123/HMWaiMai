@@ -18,31 +18,14 @@
 @property (nonatomic, weak) UIView *headerView;
 @property (nonatomic, strong) UIBarButtonItem *rightButtonItem;
 
+@property (nonatomic, weak) UIView *shopTagView;
 
 @end
 
 @implementation HMShopController
 
 - (void)viewDidLoad {
-//    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
-//    UIView *headerView = [[UIView alloc] init];
-//    headerView.backgroundColor = [UIColor orangeColor];
-//    [self.view addSubview: headerView];
-//    
-//    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.right.offset(0);
-//        make.height.offset(KShopHeaderViewMaxHeight);
-//    }];
-//    
-//
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
-//    [self.view addGestureRecognizer:pan];
-//    
-//    _headerView = headerView;
-    
+
     [self setupUI];
      [super viewDidLoad];
     
@@ -58,6 +41,9 @@
     _rightButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_share"] style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navItem.rightBarButtonItem = _rightButtonItem;
     self.navBar.tintColor = [UIColor whiteColor];
+    
+    
+    [self setShopTagView];
 }
 
 
@@ -150,6 +136,63 @@
 - (void)setShopTagView{
     UIView *shopTagView = [[UIView alloc] init];
     shopTagView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:shopTagView];
+    [shopTagView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.offset(0);
+        make.top.equalTo(_headerView.mas_bottom).offset(0);
+        make.height.offset(44);
+    }];
+    
+    _shopTagView = shopTagView;
+
+    //添加三个按钮
+    UIButton *orderBtn = [self makeSHopTagButtonWithTitle:@"点菜"];
+    [self makeSHopTagButtonWithTitle:@"评价"];
+    [self makeSHopTagButtonWithTitle:@"商家"];
+    
+    [shopTagView.subviews mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.offset(0);
+    }];
+    [shopTagView.subviews mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
+
+    UIView *shopTagLineView = [[UIView alloc] init];
+    shopTagLineView.backgroundColor = [UIColor yellowColor];
+    [shopTagView addSubview:shopTagLineView];
+    
+    [shopTagLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.offset(50);
+        make.height.offset(4);
+        make.bottom.offset(0);
+        // 小黄条加约束的代码要写在按钮添加约束的后面
+        make.centerX.equalTo(orderBtn).offset(0);
+    }];
+    
+}
+
+- (void)settingShopScrollView {
+    // 创建滚动视图
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:scrollView];
+    
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.offset(0);
+        make.top.equalTo(_shopTagView.mas_bottom).offset(0);
+    }];
+    
+}
+
+
+- (UIButton *)makeSHopTagButtonWithTitle:(NSString *)title {
+    
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    
+    [_shopTagView addSubview:btn];
+    
+    return btn;
 }
 
 @end
