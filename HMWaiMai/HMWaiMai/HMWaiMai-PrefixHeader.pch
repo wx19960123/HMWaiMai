@@ -9,4 +9,6 @@
 
 #import "UIColor+Addition.h"
 
+#import "UILabel+Addition.h"
+
 #endif /* HMWaiMai_PrefixHeader_pch */

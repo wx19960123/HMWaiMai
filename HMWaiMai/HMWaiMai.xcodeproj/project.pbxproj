@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F46C29AA1F2F519F00DFAE44 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */; };
+		F46C29B01F2F5CCD00DFAE44 /* HMShopOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29AF1F2F5CCD00DFAE44 /* HMShopOrderController.m */; };
+		F46C29B31F2F5D2600DFAE44 /* HMShopInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29B21F2F5D2600DFAE44 /* HMShopInfoController.m */; };
+		F46C29B61F2F5D3600DFAE44 /* ShopCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29B51F2F5D3600DFAE44 /* ShopCommentController.m */; };
+		F46C29B91F3191E000DFAE44 /* ShopPOI_InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29B81F3191E000DFAE44 /* ShopPOI_InfoModel.m */; };
+		F46C29BB1F31923600DFAE44 /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = F46C29BA1F31923600DFAE44 /* food.json */; };
+		F46C29BE1F31926600DFAE44 /* HMShopHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29BD1F31926600DFAE44 /* HMShopHeaderView.m */; };
+		F46C29C11F31936F00DFAE44 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F46C29C01F31936F00DFAE44 /* UILabel+Addition.m */; };
 		F4E299221F2DFDF800B86D31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E299211F2DFDF800B86D31 /* main.m */; };
 		F4E2992B1F2DFDF800B86D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E299291F2DFDF800B86D31 /* Main.storyboard */; };
 		F4E2992D1F2DFDF800B86D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */; };
@@ -58,6 +65,19 @@
 /* Begin PBXFileReference section */
 		F46C29A81F2F519F00DFAE44 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
 		F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		F46C29AE1F2F5CCD00DFAE44 /* HMShopOrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShopOrderController.h; sourceTree = "<group>"; };
+		F46C29AF1F2F5CCD00DFAE44 /* HMShopOrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShopOrderController.m; sourceTree = "<group>"; };
+		F46C29B11F2F5D2600DFAE44 /* HMShopInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShopInfoController.h; sourceTree = "<group>"; };
+		F46C29B21F2F5D2600DFAE44 /* HMShopInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShopInfoController.m; sourceTree = "<group>"; };
+		F46C29B41F2F5D3600DFAE44 /* ShopCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCommentController.h; sourceTree = "<group>"; };
+		F46C29B51F2F5D3600DFAE44 /* ShopCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCommentController.m; sourceTree = "<group>"; };
+		F46C29B71F3191E000DFAE44 /* ShopPOI_InfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopPOI_InfoModel.h; sourceTree = "<group>"; };
+		F46C29B81F3191E000DFAE44 /* ShopPOI_InfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopPOI_InfoModel.m; sourceTree = "<group>"; };
+		F46C29BA1F31923600DFAE44 /* food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		F46C29BC1F31926600DFAE44 /* HMShopHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShopHeaderView.h; sourceTree = "<group>"; };
+		F46C29BD1F31926600DFAE44 /* HMShopHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShopHeaderView.m; sourceTree = "<group>"; };
+		F46C29BF1F31936F00DFAE44 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
+		F46C29C01F31936F00DFAE44 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		F4E2991D1F2DFDF800B86D31 /* HMWaiMai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMWaiMai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E299211F2DFDF800B86D31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4E2992A1F2DFDF800B86D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +187,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F46C29AB1F2F5BAD00DFAE44 /* ShopComment(评价) */ = {
+			isa = PBXGroup;
+			children = (
+				F46C29B41F2F5D3600DFAE44 /* ShopCommentController.h */,
+				F46C29B51F2F5D3600DFAE44 /* ShopCommentController.m */,
+			);
+			path = "ShopComment(评价)";
+			sourceTree = "<group>";
+		};
+		F46C29AC1F2F5BAD00DFAE44 /* ShopInfo(商家) */ = {
+			isa = PBXGroup;
+			children = (
+				F46C29B11F2F5D2600DFAE44 /* HMShopInfoController.h */,
+				F46C29B21F2F5D2600DFAE44 /* HMShopInfoController.m */,
+			);
+			path = "ShopInfo(商家)";
+			sourceTree = "<group>";
+		};
+		F46C29AD1F2F5BAD00DFAE44 /* ShopOrder(点菜) */ = {
+			isa = PBXGroup;
+			children = (
+				F46C29AE1F2F5CCD00DFAE44 /* HMShopOrderController.h */,
+				F46C29AF1F2F5CCD00DFAE44 /* HMShopOrderController.m */,
+			);
+			path = "ShopOrder(点菜)";
+			sourceTree = "<group>";
+		};
 		F4E299141F2DFDF800B86D31 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +247,7 @@
 			children = (
 				F4E299291F2DFDF800B86D31 /* Main.storyboard */,
 				F4E2992C1F2DFDF800B86D31 /* Assets.xcassets */,
+				F46C29BA1F31923600DFAE44 /* food.json */,
 				F4E2992E1F2DFDF800B86D31 /* LaunchScreen.storyboard */,
 				F4E299311F2DFDF800B86D31 /* Info.plist */,
 				F4E299211F2DFDF800B86D31 /* main.m */,
@@ -211,6 +259,9 @@
 		F4E299371F2E01ED00B86D31 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F46C29AB1F2F5BAD00DFAE44 /* ShopComment(评价) */,
+				F46C29AC1F2F5BAD00DFAE44 /* ShopInfo(商家) */,
+				F46C29AD1F2F5BAD00DFAE44 /* ShopOrder(点菜) */,
 				F4E299801F2E0CFE00B86D31 /* main */,
 				F4E299381F2E01ED00B86D31 /* FoodDeatil(食物详情) */,
 				F4E299391F2E01ED00B86D31 /* Shop(点餐) */,
@@ -232,6 +283,10 @@
 			children = (
 				F4E299791F2E07F900B86D31 /* HMShopController.h */,
 				F4E2997A1F2E07F900B86D31 /* HMShopController.m */,
+				F46C29B71F3191E000DFAE44 /* ShopPOI_InfoModel.h */,
+				F46C29B81F3191E000DFAE44 /* ShopPOI_InfoModel.m */,
+				F46C29BC1F31926600DFAE44 /* HMShopHeaderView.h */,
+				F46C29BD1F31926600DFAE44 /* HMShopHeaderView.m */,
 			);
 			path = "Shop(点餐)";
 			sourceTree = "<group>";
@@ -239,6 +294,8 @@
 		F4E2993A1F2E01ED00B86D31 /* Common(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				F46C29BF1F31936F00DFAE44 /* UILabel+Addition.h */,
+				F46C29C01F31936F00DFAE44 /* UILabel+Addition.m */,
 				F46C29A81F2F519F00DFAE44 /* UIColor+Addition.h */,
 				F46C29A91F2F519F00DFAE44 /* UIColor+Addition.m */,
 			);
@@ -434,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E299301F2DFDF800B86D31 /* LaunchScreen.storyboard in Resources */,
+				F46C29BB1F31923600DFAE44 /* food.json in Resources */,
 				F4E2992D1F2DFDF800B86D31 /* Assets.xcassets in Resources */,
 				F4E2992B1F2DFDF800B86D31 /* Main.storyboard in Resources */,
 			);
@@ -446,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46C29BE1F31926600DFAE44 /* HMShopHeaderView.m in Sources */,
 				F4E299681F2E024700B86D31 /* AFHTTPSessionManager.m in Sources */,
 				F4E2996D1F2E024700B86D31 /* AFURLSessionManager.m in Sources */,
 				F4E299C21F2F075900B86D31 /* UIImageView+WebCache.m in Sources */,
@@ -469,10 +528,12 @@
 				F4E299861F2E0F0B00B86D31 /* HMBaseController.m in Sources */,
 				F4E2996E1F2E024700B86D31 /* MASCompositeConstraint.m in Sources */,
 				F4E299BE1F2F075900B86D31 /* UIImage+GIF.m in Sources */,
+				F46C29B91F3191E000DFAE44 /* ShopPOI_InfoModel.m in Sources */,
 				F4E2996B1F2E024700B86D31 /* AFURLRequestSerialization.m in Sources */,
 				F4E299891F2F069A00B86D31 /* HMNavigationBar.m in Sources */,
 				F4E299691F2E024700B86D31 /* AFNetworkReachabilityManager.m in Sources */,
 				F4E299BF1F2F075900B86D31 /* UIImage+MultiFormat.m in Sources */,
+				F46C29B61F2F5D3600DFAE44 /* ShopCommentController.m in Sources */,
 				F4E299BA1F2F075900B86D31 /* SDWebImageDownloaderOperation.m in Sources */,
 				F4E2996C1F2E024700B86D31 /* AFURLResponseSerialization.m in Sources */,
 				F4E299C31F2F075900B86D31 /* UIView+WebCache.m in Sources */,
@@ -481,13 +542,16 @@
 				F4E299701F2E024700B86D31 /* MASConstraintMaker.m in Sources */,
 				F4E299B81F2F075900B86D31 /* SDWebImageDecoder.m in Sources */,
 				F4E299C01F2F075900B86D31 /* UIImage+WebP.m in Sources */,
+				F46C29C11F31936F00DFAE44 /* UILabel+Addition.m in Sources */,
 				F4E299B71F2F075900B86D31 /* SDWebImageCompat.m in Sources */,
 				F4E299771F2E024700B86D31 /* ViewController+MASAdditions.m in Sources */,
+				F46C29B01F2F5CCD00DFAE44 /* HMShopOrderController.m in Sources */,
 				F4E299B31F2F075900B86D31 /* NSData+ImageContentType.m in Sources */,
 				F4E299B91F2F075900B86D31 /* SDWebImageDownloader.m in Sources */,
 				F4E299731F2E024700B86D31 /* MASViewConstraint.m in Sources */,
 				F4E299221F2DFDF800B86D31 /* main.m in Sources */,
 				F4E299721F2E024700B86D31 /* MASViewAttribute.m in Sources */,
+				F46C29B31F2F5D2600DFAE44 /* HMShopInfoController.m in Sources */,
 				F4E2997E1F2E081500B86D31 /* HMFoodDeatilController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
