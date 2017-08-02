@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class ShopPOI_InfoModel;
 @interface HMShopHeaderView : UIView
+@property (nonatomic, strong) ShopPOI_InfoModel *shopPOI_infoModel;// 模型
 
 @end
